@@ -26,3 +26,4 @@ export default async function movies({ searchParams }) {
         </>
     );
 }
+export const runtime = 'edge'
