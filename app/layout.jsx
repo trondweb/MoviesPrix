@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
                     {children}
                     <ScrollTopBtn />
                 </main>
-                <GoogleAnalytics gaId="G-Y94T96FRD7" />
+                <GoogleAnalytics gaId="G-BKBLJVFG0E" />
             </body>
         </html>
     );
