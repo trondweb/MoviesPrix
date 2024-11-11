@@ -64,4 +64,4 @@ export default async function page({ params }) {
         </div>
     );
 }
-export const runtime = 'edge'
+export const runtime = 'edge';
