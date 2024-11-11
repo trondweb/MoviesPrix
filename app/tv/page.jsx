@@ -27,4 +27,4 @@ export default async function page({ searchParams }) {
         </>
     );
 }
-export const runtime = 'edge'
+export const runtime = 'edge';
