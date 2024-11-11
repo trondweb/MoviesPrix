@@ -12,4 +12,4 @@ export async function GET(req) {
 
     return NextResponse.json(data);
 }
-export const runtime = 'edge'
+export const runtime = 'edge';
