@@ -7,7 +7,7 @@ import { unstable_noStore } from 'next/cache';
 
 export async function generateMetadata({ params }) {
     const { id } = params;
-    const { data: movieData } = await tmdbClient.get(`/movie/${id}?language=en-US`);
+    const { data: movieData } = await tmdbClient.get(`/movie/${id}?language=zh-CN`);
 
     return {
         title: movieData.title,
@@ -36,9 +36,9 @@ export default async function page({ params }) {
 
     const { id } = params;
 
-    const movieData = (await tmdbClient.get(`/movie/${id}?language=en-US`)).data;
-    const castData = (await tmdbClient.get(`/movie/${id}/credits?language=en-US`)).data.cast;
-    const similarData = (await tmdbClient.get(`/movie/${id}/similar?language=en-US&page=1`)).data.results;
+    const movieData = (await tmdbClient.get(`/movie/${id}?language=zh-CN`)).data;
+    const castData = (await tmdbClient.get(`/movie/${id}/credits?language=zh-CN`)).data.cast;
+    const similarData = (await tmdbClient.get(`/movie/${id}/similar?language=zh-CN&page=1`)).data.results;
 
     return (
         <div className="details__page">

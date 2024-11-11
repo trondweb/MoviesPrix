@@ -12,7 +12,7 @@ const genrateSitemap = async (count) => {
     const promiseArray = [];
 
     for (let i = 1; i <= count; i++) {
-        promiseArray.push(fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.TMDB_API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=true&include_video=false&page=${i}`));
+        promiseArray.push(fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.TMDB_API_KEY}&language=zh-CN&sort_by=popularity.desc&include_adult=true&include_video=false&page=${i}`));
     }
 
     const movies = await Promise.all(promiseArray);

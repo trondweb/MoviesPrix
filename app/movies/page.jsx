@@ -12,7 +12,7 @@ export const metadata = {
 export default async function movies({ searchParams }) {
     const page = parseInt(searchParams.page) || 1;
     const { data } = await tmdbClient.get(
-        `/discover/movie?language=en-US&include_adult=false&page=${page}&sort_by=vote_count.desc`
+        `/discover/movie?language=zh-CN&include_adult=false&page=${page}&sort_by=vote_count.desc`
     );
 
     const cardComponents = data.results.map((movie, i) => <Card key={i} className="normal" {...movie} />);
